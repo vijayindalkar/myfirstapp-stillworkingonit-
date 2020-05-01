@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="78dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/about"
+            android:layout_width="153dp"
+            android:layout_height="188dp"
+            android:layout_gravity="start"
+            android:alpha="0.20"
+            android:background="@drawable/mainbtn"
+            android:fontFamily="@font/autour_one"
+            android:onClick="pop"
+            android:text="@string/covid_19_n_wikipedia"
+            android:textColor="@android:color/white"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/pre"
+            android:layout_width="153dp"
+            android:layout_height="188dp"
+            android:layout_gravity="end"
+            android:alpha="0.20"
+            android:background="@drawable/mainbtn"
+            android:onClick="onClick"
+            android:fontFamily="@font/autour_one"
+            android:text="@string/covid_19_n_precautions"
+            android:textColor="@android:color/white"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/myth"
+            android:layout_width="153dp"
+            android:layout_height="188dp"
+            android:layout_gravity="start"
+            android:alpha="0.20"
+            android:background="@drawable/mainbtn"
+            android:fontFamily="@font/autour_one"
+            android:onClick="onClick"
+            android:text="@string/covid_19_n_myth_busters"
+            android:textColor="@android:color/white"
+
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+  <Button
+        android:id="@+id/popup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.50"
+
+        android:background="@drawable/update"
+        android:onClick="onClick"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="@string/about_app"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
